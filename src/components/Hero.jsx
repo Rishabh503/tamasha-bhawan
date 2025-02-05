@@ -62,8 +62,9 @@ export const Hero = () => {
 
            {/* images  */}
            <div>
-                <div className='border-black border-6 rounded-sm p-5 '>
-                    <img src="tb2.jpg" className=' border-white border-[2.5px] shadow-sm rounded-md sm:width-auto sm:h-[500px]' alt="" />
+                <div className='border-black border-6 rounded-sm p-5 flex flex-wrap justify-center gap-4'>
+                    <img src="tb2.jpg" className=' border-white border-[2.5px] shadow-sm rounded-md sm:width-auto sm:h-[400px]' alt="" />
+                    <img src="tb2.jpg" className=' border-white border-[2.5px] shadow-sm rounded-md sm:width-auto sm:h-[400px]' alt="" />
                 </div>
            </div>
         </div>

@@ -5,6 +5,7 @@ import './App.css'
 import {  Navbar } from './components/Header'
 import { Footer } from './components/Footer'
 import { Hero } from './components/Hero'
+import { Outlet } from 'react-router'
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
     <>
       <Navbar/>
       {/* outlets here  */}
-      <Hero/>
+      <Outlet/>
+      {/* <Hero/> */}
       <Footer/>
 
     </>
