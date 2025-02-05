@@ -10,7 +10,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className='bg-white w-full shadow-lg'>
+    <div className='bg-blue-50 w-full border border-b-1 shadow-lg'>
       <div className='flex justify-between items-center px-4 py-3'>
         {/* Logo */}
         <div className='h-full w-12'>
