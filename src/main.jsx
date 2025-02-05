@@ -5,11 +5,13 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import './index.css'
 import App from './App.jsx'
 import { Hero } from './components/Hero.jsx'
+import { Contact } from './components/Contact.jsx'
 
 const router=createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
       <Route path='' element={<Hero/>}/>
+      <Route path='/contact' element={<Contact/>}/>
     </Route>
   )
 )

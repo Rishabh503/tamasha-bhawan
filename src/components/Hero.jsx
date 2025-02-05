@@ -6,7 +6,10 @@ import { FaBookOpen } from "react-icons/fa";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { IoPlayOutline, IoVideocamOutline } from "react-icons/io5";
 import { RxAvatar } from "react-icons/rx";
+import { CiMusicNote1 } from "react-icons/ci";
+
 export const Hero = () => {
+
 
     const data=[
         {"logo":<CgPiano/>,"heading":"Piano","para":"lorem ispum dinor krta kyu bakchifu tamasha bhawan is very nice we appreciate it and want more so that it can riase the srandarda lessgogogoogo. "},
@@ -112,10 +115,20 @@ export const Hero = () => {
             
            {/* images  */}
            <div>
-                <div className='border-black border-6 rounded-sm p-5 flex flex-wrap justify-center gap-4'>
-                    <img src="tb2.jpg" className=' border-white border-[2.5px] shadow-sm rounded-md sm:width-auto sm:h-[300px]' alt="" />
-                    <img src="tb2.jpg" className=' border-white border-[2.5px] shadow-sm rounded-md sm:width-auto sm:h-[300px]' alt="" />
-                    <img src="tb2.jpg" className=' border-white border-[2.5px] shadow-sm rounded-md sm:width-auto sm:h-[300px]' alt="" />
+                <div className='border-black border-6 text-9xl mt-8 rounded-sm p-5 font-semibold flex flex-wrap items-center justify-center gap-4'>
+                    {/* <img src="tb2.jpg" className=' border-white border-[2.5px] shadow-sm rounded-md sm:width-auto sm:h-[300px]' alt="" /> */}
+                    <CiMusicNote1 className='text-9xl hidden sm:block text-blue-700'/>
+                    <CiMusicNote1 className='text-8xl hidden sm:block text-blue-600'/>
+                    <CiMusicNote1 className='text-7xl hidden sm:block text-blue-500'/>
+                    <CiMusicNote1 className='text-6xl hidden sm:block text-blue-400'/>
+                    <CiMusicNote1 className='text-5xl hidden sm:block text-blue-300' />
+                    <img src="tb3.png" className=' rounded-md sm:block hidden sm:width-auto sm:h-[290px]' alt="" />
+                    {/* <img src="tb2.jpg" className=' border-white border-[2.5px] shadow-sm rounded-md sm:width-auto sm:h-[300px]' alt="" /> */}
+                    <CiMusicNote1 className='text-5xl hidden sm:block text-blue-300'/>
+                    <CiMusicNote1 className='text-6xl hidden sm:block text-blue-400'/>
+                    <CiMusicNote1 className='text-7xl hidden sm:block text-blue-500'/>
+                    <CiMusicNote1 className='text-8xl hidden sm:block text-blue-600'/>
+                    <CiMusicNote1 className='text-9xl hidden sm:block text-blue-700'/>
                 </div>
            </div>
         </div>

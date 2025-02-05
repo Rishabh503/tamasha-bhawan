@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { LuMusic2 } from "react-icons/lu";
+import { NavLink } from 'react-router';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,9 @@ export const Navbar = () => {
           <p>Students</p>
           <p>Performances</p>
           <p>Testimonials</p>
-          <p>Contact Us</p>
+          <NavLink to='/contact'>
+          Contact Us
+          </NavLink>
         </div>
 
         {/* Toggle Button (Visible on Small Screens) */}
@@ -40,7 +43,9 @@ export const Navbar = () => {
         <p className='font-semibold '>Students</p>
         <p className='font-semibold'>Performances</p>
         <p className='font-semibold'>Testimonials</p>
-        <p className=' border-black'>Contact Us</p>
+        <NavLink to='/contact'>
+          Contact Us
+          </NavLink>
       </div>
     </div>
   );
