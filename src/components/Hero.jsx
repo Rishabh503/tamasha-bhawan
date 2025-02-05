@@ -97,6 +97,7 @@ export const Hero = () => {
                 Subscribe to our channel for exclusive tutorials, performances, and behind-the-scenes content
                 </p>
                </div>
+              
            </div>
 
            {/* cards  */}
@@ -118,7 +119,18 @@ export const Hero = () => {
             </div>
            ))
 }
+
            </div>
+
+           <div className=' content-center w-full text-center '>
+            
+                <button className='bg-red-400 mt-6   font-semibold rounded-xl p-4 px-10'>
+            
+                    Subscribe Now
+                    
+                   
+                </button>
+               </div>
 
             
            {/* images  */}

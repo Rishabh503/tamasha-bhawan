@@ -7,6 +7,7 @@ import App from './App.jsx'
 import { Hero } from './components/Hero.jsx'
 import { Contact } from './components/Contact.jsx'
 import { CoursePage } from './components/CoursePage.jsx'
+import About from './components/About.jsx'
 
 const router=createBrowserRouter(
   createRoutesFromElements(
@@ -14,6 +15,7 @@ const router=createBrowserRouter(
       <Route path='' element={<Hero/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/course' element={<CoursePage/>}/>
+      <Route path='/about' element={<About/>}/>
 
     </Route>
   )

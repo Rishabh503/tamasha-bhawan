@@ -26,7 +26,9 @@ export const Navbar = () => {
           <p>Notes</p>
           <p>Students</p>
           <p>Performances</p>
-          <p>Testimonials</p>
+          <NavLink to='/about'>
+          About Us
+          </NavLink>
           <NavLink to='/contact'>
           Contact Us
           </NavLink>
@@ -46,7 +48,7 @@ export const Navbar = () => {
         <p className='font-semibold '>Notes</p>
         <p className='font-semibold '>Students</p>
         <p className='font-semibold'>Performances</p>
-        <p className='font-semibold'>Testimonials</p>
+        <p className='font-semibold'>About Us</p>
         <NavLink to='/contact'>
           Contact Us
           </NavLink>
