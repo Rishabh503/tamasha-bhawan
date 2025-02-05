@@ -14,13 +14,15 @@ export const Navbar = () => {
     <div className='bg-blue-50 w-full border border-b-1 shadow-lg'>
       <div className='flex justify-between items-center px-4 py-3'>
         {/* Logo */}
-        <div className='h-full w-12'>
+        <NavLink to='/'  className='h-full w-12'>
           <img src="tb2.jpg" className='rounded-lg' alt="Logo" />
-        </div>
+        </NavLink>
 
         {/* Desktop Menu (Hidden on Small Screens) */}
-        <div className='hidden sm:flex gap-8 px-2 py-3'>
-          <p>Courses</p>
+        <div className='hidden sm:flex gap-16 font-poppins font- text-xl px-2 py-3'>
+          <NavLink to='/course'>
+          Courses
+          </NavLink>
           <p>Notes</p>
           <p>Students</p>
           <p>Performances</p>
@@ -38,7 +40,9 @@ export const Navbar = () => {
 
       {/* Mobile Menu (Collapsible) */}
       <div className={`sm:hidden flex flex-col items-start px-8 gap-3 py-4  bg-gray-50 border transition-all duration-300 ${isOpen ? "block" : "hidden"}`}>
-        <p className='font-semibold '>Courses</p>
+      <NavLink to='/course'>
+          Courses
+          </NavLink>
         <p className='font-semibold '>Notes</p>
         <p className='font-semibold '>Students</p>
         <p className='font-semibold'>Performances</p>

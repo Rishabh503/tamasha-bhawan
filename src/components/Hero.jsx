@@ -28,13 +28,21 @@ export const Hero = () => {
             {/* music info and logo  */}
            <div className='p-2 flex-col shadow-sm'>
            <div className='flex text-9xl justify-center items-center text-blue-200  ' >
-                    <p className='hidden sm:block font-extrabold'>
-                    <LuMusic2 />
-                    </p>
+                    <div className='hidden sm:flex sm:block font-extrabold'>
+                    <LuMusic2 className='text-9xl hidden sm:block text-blue-700'/>
+                    <LuMusic2 className='text-8xl hidden sm:block text-blue-600'/>
+                    <LuMusic2 className='text-7xl hidden sm:block text-blue-500'/>
+                    <LuMusic2 className='text-6xl hidden sm:block text-blue-400'/>
+                    <LuMusic2 className='text-5xl hidden sm:block text-blue-300' />
+                    </div>
                     <img   src="tamasha.png" className='h-1/2 ' alt="" />
-                    <p className=' hidden sm:block font-extrabold sm:transform scale-x-[-1]'>
-                    <LuMusic2 />
-                    </p>
+                    <div className='hidden sm:flex sm:block font-extrabold'>
+                    <LuMusic2 className='text-5xl transform scale-x-[-1] hidden sm:block text-blue-300'/>
+                    <LuMusic2 className='text-6xl transform scale-x-[-1] hidden sm:block text-blue-400'/>
+                    <LuMusic2 className='text-7xl  transform scale-x-[-1] hidden sm:block text-blue-500'/>
+                    <LuMusic2 className='text-8xl hidden transform scale-x-[-1] sm:block text-blue-600'/>
+                    <LuMusic2 className='text-9xl hidden transform scale-x-[-1] sm:block text-blue-700' />
+                    </div>
                 </div>
                <div className='flex-col font-poppins  text-center items-center'>
                 <h1 className='sm:text-[5.5vw] text-[9vw] '>
