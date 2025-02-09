@@ -23,9 +23,9 @@ export const Navbar = () => {
           <NavLink to='/course'>
           Courses
           </NavLink>
-          <p>Notes</p>
-          <p>Students</p>
-          <p>Performances</p>
+          {/* <p>Notes</p> */}
+          {/* <p>Students</p> */}
+          <p>Testimonials</p>
           <NavLink to='/about'>
           About Us
           </NavLink>
@@ -41,14 +41,16 @@ export const Navbar = () => {
       </div>
 
       {/* Mobile Menu (Collapsible) */}
-      <div className={`sm:hidden flex flex-col items-start px-8 gap-3 py-4  bg-gray-50 border transition-all duration-300 ${isOpen ? "block" : "hidden"}`}>
+      <div className={`sm:hidden flex flex-col items-start font-semibold px-8 gap-3 py-4  bg-gray-50 border transition-all duration-300 ${isOpen ? "block" : "hidden"}`}>
       <NavLink to='/course'>
           Courses
           </NavLink>
-        <p className='font-semibold '>Notes</p>
-        <p className='font-semibold '>Students</p>
-        <p className='font-semibold'>Performances</p>
-        <p className='font-semibold'>About Us</p>
+        {/* <p className='font-semibold '>Notes</p>  */}
+        {/* <p className='font-semibold '>Students</p> */}
+        <p className='font-semibold'>Testimonials</p>
+        <NavLink to='/about'>
+          About Us
+          </NavLink>
         <NavLink to='/contact'>
           Contact Us
           </NavLink>

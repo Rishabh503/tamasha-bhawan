@@ -2,9 +2,17 @@ import React from 'react'
 import { LuMusic2 } from "react-icons/lu";
 import { CgPiano } from "react-icons/cg";
 import { GiMicrophone } from "react-icons/gi";
-import { FaBookOpen } from "react-icons/fa";
+import { FaBookOpen, FaGuitar, FaMusic, FaQuestion } from "react-icons/fa";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { IoPlayOutline, IoVideocamOutline } from "react-icons/io5";
+import { GiMusicalNotes } from "react-icons/gi";
+import { MdMusicNote, MdQuestionMark } from "react-icons/md";
+import { GiMusicalScore } from "react-icons/gi";
+import { NavLink } from 'react-router';
+
+
+
+
 import { RxAvatar } from "react-icons/rx";
 import { CiMusicNote1 } from "react-icons/ci";
 
@@ -12,9 +20,13 @@ export const Hero = () => {
 
 
     const data=[
-        {"logo":<CgPiano/>,"heading":"Piano","para":"lorem ispum dinor krta kyu bakchifu tamasha bhawan is very nice we appreciate it and want more so that it can riase the srandarda lessgogogoogo. "},
-        {"logo":<GiMicrophone/>,"heading":"Vocal","para":"lorem ispum dinor krta kyu bakchifu tamasha bhawan is very nice we appreciate it and want more so that it can riase the srandarda lessgogogoogo. "},
-        {"logo":<FaBookOpen/>,"heading":"UGC-NET","para":"lorem ispum dinor krta kyu bakchifu tamasha bhawan is very nice we appreciate it and want more so that it can riase the srandarda lessgogogoogo. "}
+        {"logo":<MdQuestionMark/>,"heading":"COUNSELLING SESSION","para":"lorem ispum dinor krta kyu bakchifu tamasha bhawan is very nice we appreciate it and want more so that it can riase the srandarda lessgogogoogo. "},
+        {"logo":<FaBookOpen/>,"heading":"UGC-NET MUSIC PAPER 2","para":"lorem ispum dinor krta kyu bakchifu tamasha bhawan is very nice we appreciate it and want more so that it can riase the srandarda lessgogogoogo. "},
+        {"logo":<GiMicrophone/>,"heading":"Hindustani Light Music Vocal","para":"lorem ispum dinor krta kyu bakchifu tamasha bhawan is very nice we appreciate it and want more so that it can riase the srandarda lessgogogoogo. "},
+        {"logo":<GiMicrophone/>,"heading":"Hindustani Classical Music VocaL","para":"lorem ispum dinor krta kyu bakchifu tamasha bhawan is very nice we appreciate it and want more so that it can riase the srandarda lessgogogoogo. "},
+
+        {"logo":<FaBookOpen/>,"heading":"TGT-PRT MUSIC PREPRATION","para":"lorem ispum dinor krta kyu bakchifu tamasha bhawan is very nice we appreciate it and want more so that it can riase the srandarda lessgogogoogo. "},
+        {"logo":<FaGuitar/>,"heading":"GUITAR","para":"lorem ispum dinor krta kyu bakchifu tamasha bhawan is very nice we appreciate it and want more so that it can riase the srandarda lessgogogoogo. "},
     ]
 
     const data2=[
@@ -30,6 +42,7 @@ export const Hero = () => {
            <div className='flex text-9xl justify-center items-center text-blue-200  ' >
                     <div className='hidden sm:flex sm:block font-extrabold'>
                     <LuMusic2 className='text-9xl hidden sm:block text-blue-700'/>
+                    {/* <LuMusic2/> */}
                     <LuMusic2 className='text-8xl hidden sm:block text-blue-600'/>
                     <LuMusic2 className='text-7xl hidden sm:block text-blue-500'/>
                     <LuMusic2 className='text-6xl hidden sm:block text-blue-400'/>
@@ -59,7 +72,7 @@ export const Hero = () => {
            </div>
 
            {/* cards  */}
-           <div className='p-5 pt-8  gap-8 w-full grid sm:grid-cols-3 items-center justify-between'>
+           <div className='p-5 pt-8  gap-8 w-full grid grid-cols-2 sm:grid-cols-3 items-center justify-between'>
             {
            data.map((item,index)=>(
             <div className='w-[320px] sm:w-[400px] h-[200px] bg-blue-100 rounded-md flex flex-col p-2 gap-4 '  key={index}>
@@ -81,12 +94,40 @@ export const Hero = () => {
   {/* second set  */}
            <div className='p-2 flex-col mt-10 border-lg'>
                 <div className='flex text-9xl justify-center items-center text-red-400  ' >
-                    <a href="https://www.youtube.com/@TamashaBhawanMusic">
+                    <a className='flex flex-col items-center' href="https://www.youtube.com/@TamashaBhawanMusic">
+                        <p className='flex gap-4  justify-between items-center'>
+                        {/* <GiMusicalNotes className='text-2xl'/>
+                    <GiMusicalNotes className='text-2xl'/>
+                    <GiMusicalNotes className='text-2xl'/>
+                    <GiMusicalNotes className='text-2xl'/>
+                        <GiMusicalNotes className='text-2xl'/>
+                    <GiMusicalNotes className='text-2xl'/>
+                    <GiMusicalNotes className='text-2xl'/>
+                    <GiMusicalNotes className='text-2xl'/>
+                        <GiMusicalNotes className='text-2xl'/>
+                    <GiMusicalNotes className='text-2xl'/>
+                    <GiMusicalNotes className='text-2xl'/>
+                    <GiMusicalNotes className='text-2xl'/>
+                        <GiMusicalNotes className='text-2xl'/>
+                    <GiMusicalNotes className='text-2xl'/>
+                    <GiMusicalNotes className='text-2xl'/>
+                    <GiMusicalNotes className='text-2xl'/>
+                        <GiMusicalNotes className='text-2xl'/>
+                    <GiMusicalNotes className='text-2xl'/>
+                    <GiMusicalNotes className='text-2xl'/>
+                    <GiMusicalNotes className='text-2xl'/>
+                        <GiMusicalNotes className='text-2xl'/>
+                    <GiMusicalNotes className='text-2xl'/>
+                    <GiMusicalNotes className='text-2xl'/>
+                    <GiMusicalNotes className='text-2xl'/> */}
+                        </p>
                     <AiOutlineYoutube href='https://www.youtube.com/@TamashaBhawanMusic'/>
                     </a>
-                
                 </div>
                <div className='flex-col font-poppins  text-center items-center'>
+                <p>
+               
+                </p>
                 <h1 className='sm:text-[5.5vw] text-[9vw] '>
                       Join OUR  <span className='text-red-500 font-semibold'>
                         COMMUNITY 
@@ -137,20 +178,35 @@ export const Hero = () => {
            <div>
                 <div className='border-black border-6 text-9xl mt-8 rounded-sm p-5 font-semibold flex flex-wrap items-center justify-center gap-4'>
                     {/* <img src="tb2.jpg" className=' border-white border-[2.5px] shadow-sm rounded-md sm:width-auto sm:h-[300px]' alt="" /> */}
-                    <CiMusicNote1 className='text-9xl hidden sm:block text-blue-700'/>
-                    <CiMusicNote1 className='text-8xl hidden sm:block text-blue-600'/>
-                    <CiMusicNote1 className='text-7xl hidden sm:block text-blue-500'/>
-                    <CiMusicNote1 className='text-6xl hidden sm:block text-blue-400'/>
-                    <CiMusicNote1 className='text-5xl hidden sm:block text-blue-300' />
+                    <GiMusicalNotes className='text-9xl hidden sm:block text-blue-700'/>
+                    <MdMusicNote className='text-8xl hidden sm:block text-blue-600'/>
+                    <GiMusicalNotes className='text-7xl hidden sm:block text-blue-500'/>
+                    <MdMusicNote className='text-6xl hidden sm:block text-blue-400'/>
+                    <GiMusicalNotes className='text-5xl hidden sm:block text-blue-300' />
                     <img src="tb3.png" className=' rounded-md sm:block hidden sm:width-auto sm:h-[290px]' alt="" />
                     {/* <img src="tb2.jpg" className=' border-white border-[2.5px] shadow-sm rounded-md sm:width-auto sm:h-[300px]' alt="" /> */}
-                    <CiMusicNote1 className='text-5xl hidden sm:block text-blue-300'/>
-                    <CiMusicNote1 className='text-6xl hidden sm:block text-blue-400'/>
-                    <CiMusicNote1 className='text-7xl hidden sm:block text-blue-500'/>
-                    <CiMusicNote1 className='text-8xl hidden sm:block text-blue-600'/>
-                    <CiMusicNote1 className='text-9xl hidden sm:block text-blue-700'/>
+                    <MdMusicNote className='text-5xl hidden sm:block text-blue-300'/>
+                    <GiMusicalNotes className='text-6xl hidden sm:block text-blue-400'/>
+                    <MdMusicNote className='text-7xl hidden sm:block text-blue-500'/>
+                    <GiMusicalNotes className='text-8xl hidden sm:block text-blue-600'/>
+                    <MdMusicNote className='text-9xl hidden sm:block text-blue-700'/>
                 </div>
            </div>
+
+           <div className='flex font-poppins flex-col gap-10  text-lg'>
+        <div className=' text-start w-full flex flex-col gap-6 p-2 text-blue-600 font-semibold '>
+         <p className=' text-5xl sm:text-5xl'>
+         About Us 
+         </p>
+            
+            <p className='text-xl text-slate-600 font-semibold p-3'>
+            At Tamasha Bhawan, students will have access to both practical and theoretical knowledge of Hindustani classical music. This means that in addition to learning the technical aspects of music, students will also gain an understanding of the cultural and historical context in which the music was created. By providing a comprehensive education that includes both practical and theoretical knowledge, Tamasha Bhawan ensures that students are equipped with the skills and knowledge needed to become well-rounded and accomplished musicians.
+            </p>
+             <NavLink className='p-2 text-end font-sm' to='/about'>
+                See More
+             </NavLink>
+        </div>
+        </div>
         </div>
     </section>
   )
