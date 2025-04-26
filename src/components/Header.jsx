@@ -23,6 +23,9 @@ export const Navbar = () => {
           <NavLink to='/course'>
           Courses
           </NavLink>
+          <NavLink to='/new'>
+          New Design
+          </NavLink>
           {/* <p>Notes</p> */}
           {/* <p>Students</p> */}
           <p>Testimonials</p>

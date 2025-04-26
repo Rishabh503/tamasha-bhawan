@@ -8,6 +8,8 @@ import { Hero } from './components/Hero.jsx'
 import { Contact } from './components/Contact.jsx'
 import { CoursePage } from './components/CoursePage.jsx'
 import About from './components/About.jsx'
+import HomePage from './components/DesignTwo.jsx'
+import Extra from './components/Extra.jsx'
 
 const router=createBrowserRouter(
   createRoutesFromElements(
@@ -16,6 +18,12 @@ const router=createBrowserRouter(
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/course' element={<CoursePage/>}/>
       <Route path='/about' element={<About/>}/>
+
+
+      <Route path='/new' element={<HomePage/>}/>
+      <Route path='/new2' element={<Extra/>}/>
+
+
 
     </Route>
   )
