@@ -32,7 +32,7 @@ const HomePage = () => {
       id: 1, 
       name: "Master the Sitar", 
       category: "instrumental",
-      img: "https://images.unsplash.com/photo-1579201161117-1c3c490f44a0?q=80&w=1000",
+      img: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1000",
       instructor: "Pt. Ravi Kumar",
       desc: "Embark on a mystical journey through the strings of India's most iconic instrument",
       duration: "6 months",
@@ -43,7 +43,7 @@ const HomePage = () => {
       id: 2, 
       name: "Tabla Rhythms", 
       category: "instrumental",
-      img: "https://images.unsplash.com/photo-1575853121109-f2e0a81711c9?q=80&w=1000", 
+      img: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1000", 
       instructor: "Ustad Zakir Ali",
       desc: "Feel the pulse of Indian rhythms through the mesmerizing beats of tabla",
       duration: "4 months",
@@ -195,9 +195,9 @@ const HomePage = () => {
         {/* Left Side - Image */}
         <div className="md:w-1/2 mb-8 md:mb-0">
           <img 
-            src="https://res.cloudinary.com/dhe9p6bo0/image/upload/v1745701890/TAMASHA__1_-removebg-preview_p2zpbl.png" 
+            src="https://res.cloudinary.com/dhe9p6bo0/image/upload/v1745702083/TAMASHA-removebg-preview_hhyykj.png" 
             alt="Indian Classical Music" 
-            className="w-full bg-transparent h-auto object-cover"
+            className="w-full bg-transparent  h-full object-cover"
           />
         </div>
 
