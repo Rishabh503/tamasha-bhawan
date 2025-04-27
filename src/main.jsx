@@ -10,6 +10,7 @@ import { CoursePage } from './components/CoursePage.jsx'
 import About from './components/About.jsx'
 import HomePage from './components/DesignTwo.jsx'
 import Extra from './components/Extra.jsx'
+import NewAbout from './components/NewAbout.jsx'
 
 const router=createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +23,7 @@ const router=createBrowserRouter(
 
       <Route path='/new' element={<HomePage/>}/>
       <Route path='/new2' element={<Extra/>}/>
+      <Route path='/newAbout' element={<NewAbout/>}/>
 
 
 

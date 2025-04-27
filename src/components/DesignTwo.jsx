@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaArrowRight, FaYoutube, FaShoppingCart, FaBookOpen, FaGraduationCap, FaStar, FaCalendarAlt, FaUser, FaQuoteLeft, FaQuoteRight, FaPlay } from "react-icons/fa";
+import { NavLink } from 'react-router';
 
 const HomePage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -182,7 +183,7 @@ const HomePage = () => {
           <h1 className="text-2xl font-bold">Tamasha Bhawan</h1>
         </div>
         <nav className="hidden md:flex space-x-6">
-          <a href="#about" className="hover:text-yellow-400">About</a>
+          <NavLink to='/newAbout'> About</NavLink>
           <a href="#courses" className="hover:text-yellow-400">Courses</a>
           <a href="#products" className="hover:text-yellow-400">Products</a>
           <a href="#testimonials" className="hover:text-yellow-400">Testimonials</a>
