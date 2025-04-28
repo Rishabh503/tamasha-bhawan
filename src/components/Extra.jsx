@@ -51,6 +51,7 @@ export default function Extra() {
       <section id="about" className="p-8 md:p-16">
         <h2 className="text-3xl font-bold mb-6">About Tamasha Bhawan</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem quibusdam sed et ut magni, quas repellat maiores. Enim, voluptates possimus iure blanditiis, libero a laboriosam sed tempora exercitationem, quo sit!
           At Tamasha Bhawan, we believe music is not just an art — it's a way of life. With decades of experience, 
           our institute has produced top musicians and performers. We prepare students for top competitive exams 
           like Sangeet Visharad, Sangeet Prabhakar, and many more.
