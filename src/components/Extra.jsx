@@ -58,6 +58,7 @@ export default function Extra() {
         </p>
         <p className="text-gray-700 leading-relaxed">
           Our curriculum blends classical techniques with modern learning methods to help every student find their unique voice.
+          which ;eads us to the required pace and info
         </p>
       </section>
 
