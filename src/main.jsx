@@ -14,7 +14,7 @@ import NewAbout from './components/NewAbout.jsx'
 
 const router=createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<App/>}>
+    <Route path='/' element={<HomePage/>}>
       <Route path='' element={<Hero/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/course' element={<CoursePage/>}/>
