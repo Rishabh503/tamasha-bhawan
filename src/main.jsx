@@ -10,12 +10,12 @@ import { CoursePage } from './components/CoursePage.jsx'
 import About from './components/About.jsx'
 import HomePage from './components/DesignTwo.jsx'
 import Extra from './components/Extra.jsx'
-import NewAbout from './components/NewAbout.jsx'
-
+// import NewAbout from './components/NewAbout.jsx'
+import AboutUs from './components/NewAbout.jsx'
 const router=createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<HomePage/>}>
-      <Route path='' element={<Hero/>}/>
+    <Route path='/' element={<App/>}>
+      <Route path='' element={<HomePage/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/course' element={<CoursePage/>}/>
       <Route path='/about' element={<About/>}/>
@@ -23,10 +23,7 @@ const router=createBrowserRouter(
 
       <Route path='/new' element={<HomePage/>}/>
       <Route path='/new2' element={<Extra/>}/>
-      <Route path='/newAbout' element={<NewAbout/>}/>
-
-
-
+      <Route path='/newAbout' element={<AboutUs/>}/>
     </Route>
   )
 )

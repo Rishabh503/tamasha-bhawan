@@ -36,7 +36,7 @@ export const Contact = () => {
     }
   return (
     <section className='w-full mb-24  h-auto min-h-screen '>
-        {/* top portion  */}
+
         <div className=' bg-purple-600 p-12 sm:p-20 flex flex-col items-center justify-center'>
             <h1 className='font-[poppins] text-white text-[32px] sm:text-[48px]'>
                 Get in Touch
@@ -45,7 +45,6 @@ export const Contact = () => {
             Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
             </h3>
         </div>
-        {/* form section  */}
         <div className=' flex flex-col  px-6 py-6 sm:px-24 sm:py-20 '>
            <div className='bg-white shadow-md rounded-lg p-6 sm:p-10 border-purple-100'>
             

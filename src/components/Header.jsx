@@ -11,54 +11,21 @@ export const Navbar = () => {
   };
 
   return (
-    <div className='bg-blue-50 w-full border border-b-1 shadow-lg'>
-      <div className='flex justify-between items-center px-4 py-3'>
-        {/* Logo */}
-        <NavLink to='/'  className='h-full w-12'>
-          <img src="tb2.jpg" className='rounded-lg' alt="Logo" />
-        </NavLink>
-
-        {/* Desktop Menu (Hidden on Small Screens) */}
-        <div className='hidden sm:flex gap-16 font-poppins font- text-xl px-2 py-3'>
-          <NavLink to='/course'>
-          Courses
-          </NavLink>
-          <NavLink to='/new'>
-          New Design
-          </NavLink>
-          {/* <p>Notes</p> */}
-          {/* <p>Students</p> */}
-          <p>Testimonials</p>
-          <NavLink to='/about'>
-          About Us
-          </NavLink>
-          <NavLink to='/contact'>
-          Contact Us
-          </NavLink>
-        </div>
-
-        {/* Toggle Button (Visible on Small Screens) */}
-        <button className='sm:hidden text-2xl' onClick={toggleNavbar}>
-          <LuMusic2 />
-        </button>
-      </div>
-
-      {/* Mobile Menu (Collapsible) */}
-      <div className={`sm:hidden flex flex-col items-start font-semibold px-8 gap-3 py-4  bg-gray-50 border transition-all duration-300 ${isOpen ? "block" : "hidden"}`}>
-      <NavLink to='/course'>
-          Courses
-          </NavLink>
-        {/* <p className='font-semibold '>Notes</p>  */}
-        {/* <p className='font-semibold '>Students</p> */}
-        <p className='font-semibold'>Testimonials</p>
-        <NavLink to='/about'>
-          About Us
-          </NavLink>
-        <NavLink to='/contact'>
-          Contact Us
-          </NavLink>
-      </div>
-    </div>
+   <header className="fixed top-0 w-full bg-[#4A1A1A] text-white py-4 px-8 flex justify-between items-center shadow-md z-50">
+           <div   className="flex items-center space-x-3">
+            <NavLink to='/'> 
+            <img src="https://res.cloudinary.com/dhe9p6bo0/image/upload/v1745699335/WhatsApp_Image_2025-04-27_at_01.46.00_31d81b70-removebg-preview_riv0f9.png" alt="Logo" className="h-10 w-10" />
+            </NavLink>
+             <h1 className="text-2xl font-bold">Tamasha Bhawan</h1>
+           </div>
+           <nav className="hidden md:flex space-x-6">
+             <NavLink to='/newAbout'> About</NavLink>
+             <a href="#courses" className="hover:text-yellow-400">Courses</a>
+             <a href="#products" className="hover:text-yellow-400">Products</a>
+             <a href="#testimonials" className="hover:text-yellow-400">Testimonials</a>
+             <NavLink to='/contact'> Contact</NavLink>
+           </nav>
+</header>
   );
 };
 
