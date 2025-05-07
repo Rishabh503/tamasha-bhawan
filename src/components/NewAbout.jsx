@@ -185,7 +185,7 @@ export default function AboutUs() {
   };
 
   return (
-    <div className="bg-amber-50 text-amber-900">
+    <div className="bg-amber-50 text-[#4A1A1A]">
       {/* Enhanced Hero Section with Full Background Image and Glass Effect */}
       <section className="relative flex items-center justify-center overflow-hidden">
         <div 
@@ -209,8 +209,8 @@ export default function AboutUs() {
            
             
             {/* Main Title with Glass Effect */}
-            <div className="backdrop-blur-md bg-gradient-to-b from-amber-900/50 to-amber-800/50 rounded-lg p-10 mb-8 border border-amber-200/30 shadow-2xl">
-              <h1 className="text-6xl md:text-8xl font-bold text-amber-100 mb-4 tracking-wider font-serif">
+            <div className="backdrop-blur-md bg-gradient-to-b from-amber-900/50 to-[#4A1A1A] rounded-lg p-10 mb-8 border border-amber-200/30 shadow-2xl">
+              <h1 className="text-6xl md:text-8xl font-bold text  mb-4 tracking-wider font-serif">
                 Tamasha Bhawan
               </h1>
               
@@ -242,7 +242,7 @@ export default function AboutUs() {
           <div className="backdrop-blur-sm bg-amber-700/20 inline-block rounded-lg px-8 py-4 border border-amber-100/20 shadow-lg transform transition-all duration-1000" style={{
             transform: scrolled ? 'translateY(20px) scale(0.95)' : 'translateY(0) scale(1)'
           }}>
-            <h2 className="text-2xl md:text-3xl font-semibold text-amber-100">
+            <h2 className="text-2xl md:text-3xl font-semibold text-[#7A2E2E]">
               Where Classical Melodies Meet Modern Mastery
             </h2>
           </div>
@@ -257,7 +257,7 @@ export default function AboutUs() {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-amber-100 to-amber-50">
+      <section className="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-amber-100 to-[#c58f8f]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <Music className="inline-block text-amber-600 mb-2" size={32} />
@@ -291,7 +291,7 @@ export default function AboutUs() {
       </section>
 
       {/* Vision & Mission Section */}
-      <section className="py-16 px-4 md:px-8 lg:px-16 bg-amber-800 text-amber-50">
+      <section className="py-16 px-4 md:px-8 lg:px-16 bg-[#4A1A1A] text-amber-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <BookOpen className="inline-block text-amber-200 mb-2" size={32} />
@@ -423,7 +423,7 @@ export default function AboutUs() {
       </section>
 
       {/* Founders Section */}
-      <section className="py-16 px-4 md:px-8 lg:px-16 bg-amber-800 text-amber-50">
+      <section className="py-16 px-4 md:px-8 lg:px-16 bg-[#602929] text-amber-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <Users className="inline-block text-amber-200 mb-2" size={32} />
@@ -449,7 +449,7 @@ export default function AboutUs() {
             </div>
             
             <div className="w-full md:w-1/2 flex flex-col justify-center">
-              <h3 className="text-3xl font-bold mb-4 text-amber-100">Pandit Rajan Mishra</h3>
+              <h3 className="text-3xl font-bold mb-4 text-amber-100">Abha Tripathi & Anchal Tripathi</h3>
               <p className="text-lg mb-4 text-amber-200">Founder & Artistic Director</p>
               <p className="text-lg mb-4">
                 With over 30 years of experience in Hindustani classical music, Pandit Rajan Mishra is a renowned vocalist of the Banaras Gharana tradition. His deep knowledge and passion for preserving musical heritage led to the founding of Tamasha Bhawan in 2015.
@@ -502,90 +502,91 @@ export default function AboutUs() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-16 px-4 md:px-8 lg:px-16 bg-amber-800 text-amber-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <Music className="inline-block text-amber-200 mb-2" size={32} />
-            <h2 className="text-4xl font-bold text-amber-100 mb-4">Join Our Musical Journey</h2>
-            <div className="h-1 w-24 bg-amber-200 mx-auto"></div>
-            <p className="text-xl mt-6 max-w-3xl mx-auto">
-              Be part of our vibrant community and explore the rich tradition of Hindustani classical music. Connect with us through any of these channels:
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-4xl mx-auto">
-            {/* WhatsApp */}
-            <a 
-              href="#" 
-              className="bg-amber-700 hover:bg-amber-600 p-6 rounded-lg text-center flex flex-col items-center justify-center transition-all hover:-translate-y-2 duration-300"
-            >
-              <div className="bg-amber-100 text-amber-800 p-4 rounded-full mb-4">
-                <MessageSquare size={24} />
-              </div>
-              <span className="font-medium">WhatsApp</span>
-            </a>
-            
-            {/* Telegram */}
-            <a 
-              href="#" 
-              className="bg-amber-700 hover:bg-amber-600 p-6 rounded-lg text-center flex flex-col items-center justify-center transition-all hover:-translate-y-2 duration-300"
-            >
-              <div className="bg-amber-100 text-amber-800 p-4 rounded-full mb-4">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22 2L11 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-              <span className="font-medium">Telegram</span>
-            </a>
-            
-            {/* Email */}
-            <a 
-              href="mailto:contact@tamashabhawan.com" 
-              className="bg-amber-700 hover:bg-amber-600 p-6 rounded-lg text-center flex flex-col items-center justify-center transition-all hover:-translate-y-2 duration-300"
-            >
-              <div className="bg-amber-100 text-amber-800 p-4 rounded-full mb-4">
-                <Mail size={24} />
-              </div>
-              <span className="font-medium">Email</span>
-            </a>
-            
-            {/* Phone */}
-            <a 
-              href="tel:+919876543210" 
-              className="bg-amber-700 hover:bg-amber-600 p-6 rounded-lg text-center flex flex-col items-center justify-center transition-all hover:-translate-y-2 duration-300"
-            >
-              <div className="bg-amber-100 text-amber-800 p-4 rounded-full mb-4">
-                <Phone size={24} />
-              </div>
-              <span className="font-medium">Phone</span>
-            </a>
-            
-            {/* YouTube */}
-            <a 
-              href="#" 
-              className="bg-amber-700 hover:bg-amber-600 p-6 rounded-lg text-center flex flex-col items-center justify-center transition-all hover:-translate-y-2 duration-300"
-            >
-              <div className="bg-amber-100 text-amber-800 p-4 rounded-full mb-4">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22.54 6.42C22.4212 5.94541 22.1793 5.51057 21.8387 5.15941C21.498 4.80824 21.0708 4.55318 20.6 4.42C18.88 4 12 4 12 4C12 4 5.12 4 3.4 4.46C2.92925 4.59318 2.50198 4.84824 2.16135 5.19941C1.82072 5.55057 1.57879 5.98541 1.46 6.46C1.14521 8.20556 0.991235 9.97631 1 11.75C0.988802 13.537 1.14279 15.3213 1.46 17.08C1.57879 17.5546 1.82072 17.9894 2.16135 18.3406C2.50198 18.6918 2.92925 18.9468 3.4 19.08C5.12 19.54 12 19.54 12 19.54C12 19.54 18.88 19.54 20.6 19.08C21.0708 18.9468 21.498 18.6918 21.8387 18.3406C22.1793 17.9894 22.4212 17.5546 22.54 17.08C22.8524 15.3397 23.0063 13.5747 23 11.8C23.0112 10.013 22.8572 8.22866 22.54 6.47" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-              <span className="font-medium">YouTube</span>
-            </a>
-          </div>
-          
-          <div className="mt-12 text-center">
-            <a 
-              href="#" 
-              className="inline-block bg-amber-100 text-amber-800 font-bold py-3 px-8 rounded-full hover:bg-amber-200 transition-colors text-lg"
-            >
-              Enroll Now
-            </a>
-          </div>
+      <section className="py-16 px-4 md:px-8 lg:px-16 bg-[#4A1A1A] text-[#D7A32F]">
+  <div className="max-w-6xl mx-auto">
+    <div className="text-center mb-12">
+      <Music className="inline-block text-[#D7A32F] mb-2" size={32} />
+      <h2 className="text-4xl font-bold text-[#D7A32F] mb-4">Join Our Musical Journey</h2>
+      <div className="h-1 w-24 bg-[#D7A32F] mx-auto"></div>
+      <p className="text-xl mt-6 max-w-3xl mx-auto">
+        Be part of our vibrant community and explore the rich tradition of Hindustani classical music. Connect with us through any of these channels:
+      </p>
+    </div>
+    
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-4xl mx-auto">
+      {/* WhatsApp */}
+      <a 
+        href="#" 
+        className="bg-[#D7A32F] hover:bg-[#4A1A1A] p-6 rounded-lg text-center flex flex-col items-center justify-center transition-all hover:-translate-y-2 duration-300"
+      >
+        <div className="bg-[#000000] text-[#ffffff] p-4 rounded-full mb-4">
+          <MessageSquare size={24} />
         </div>
-      </section>
+        <span className="font-medium text-white">WhatsApp</span>
+      </a>
+      
+      {/* Telegram */}
+      <a 
+        href="#" 
+        className="bg-[#D7A32F] hover:bg-[#4A1A1A] p-6 rounded-lg text-center flex flex-col items-center justify-center transition-all hover:-translate-y-2 duration-300"
+      >
+        <div className="bg-[#000000] text-[#fff] p-4 rounded-full mb-4">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 2L11 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+        <span className="font-medium text-white">Telegram</span>
+      </a>
+      
+      {/* Email */}
+      <a 
+        href="mailto:contact@tamashabhawan.com" 
+        className="bg-[#D7A32F] hover:bg-[#4A1A1A] p-6 rounded-lg text-center flex flex-col items-center justify-center transition-all hover:-translate-y-2 duration-300"
+      >
+        <div className="bg-[#000] text-[#fff] p-4 rounded-full mb-4">
+          <Mail size={24} />
+        </div>
+        <span className="font-medium text-white">Email</span>
+      </a>
+      
+      {/* Phone */}
+      <a 
+        href="tel:+919876543210" 
+        className="bg-[#D7A32F] hover:bg-[#4A1A1A] p-6 rounded-lg text-center flex flex-col items-center justify-center transition-all hover:-translate-y-2 duration-300"
+      >
+        <div className="bg-[#000] text-[#fff] p-4 rounded-full mb-4">
+          <Phone size={24} />
+        </div>
+        <span className="font-medium text-white">Phone</span>
+      </a>
+      
+      {/* YouTube */}
+      <a 
+        href="#" 
+        className="bg-[#D7A32F] hover:bg-[#4A1A1A] p-6 rounded-lg text-center flex flex-col items-center justify-center transition-all hover:-translate-y-2 duration-300"
+      >
+        <div className="bg-[#000] text-[#fff] p-4 rounded-full mb-4">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.54 6.42C22.4212 5.94541 22.1793 5.51057 21.8387 5.15941C21.498 4.80824 21.0708 4.55318 20.6 4.42C18.88 4 12 4 12 4C12 4 5.12 4 3.4 4.46C2.92925 4.59318 2.50198 4.84824 2.16135 5.19941C1.82072 5.55057 1.57879 5.98541 1.46 6.46C1.14521 8.20556 0.991235 9.97631 1 11.75C0.988802 13.537 1.14279 15.3213 1.46 17.08C1.57879 17.5546 1.82072 17.9894 2.16135 18.3406C2.50198 18.6918 2.92925 18.9468 3.4 19.08C5.12 19.54 12 19.54 12 19.54C12 19.54 18.88 19.54 20.6 19.08C21.0708 18.9468 21.498 18.6918 21.8387 18.3406C22.1793 17.9894 22.4212 17.5546 22.54 17.08C22.8524 15.3397 23.0063 13.5747 23 11.8C23.0112 10.013 22.8572 8.22866 22.54 6.47" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+        <span className="font-medium text-white">YouTube</span>
+      </a>
+    </div>
+    
+    <div className="mt-12 text-center">
+      <a 
+        href="#" 
+        className="inline-block bg-[#D7A32F] text-[#4A1A1A] font-bold py-3 px-8 rounded-full hover:bg-[#4A1A1A] hover:text-[#D7A32F] transition-colors text-lg"
+      >
+        Enroll Now
+      </a>
+    </div>
+  </div>
+</section>
+
     </div>
   );
 }
