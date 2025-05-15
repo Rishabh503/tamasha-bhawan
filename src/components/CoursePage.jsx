@@ -1,81 +1,92 @@
-import React from 'react'
-// import data from '../data/course.json'
-import { PiGuitarThin } from "react-icons/pi";
-import { LuMusic2 } from "react-icons/lu";
-import { CgPiano } from "react-icons/cg";
-import { GiMicrophone, GiViolin } from "react-icons/gi";
-import { FaBookOpen } from "react-icons/fa";
-import { CourseCard } from './CourseCard'
+import React, { useState, useEffect, useRef } from 'react';
+import { FiEdit, FiTrash2, FiSave, FiPlus } from 'react-icons/fi';
 
-const data=[
-    {
-        "name": "Beginner Guitar Course",
-        "detail": "Learn the basics of guitar, including chords, strumming, and simple songs.",
-        "duration": "3 months",
-        "price": "7500 Rs",
-        "logo": <PiGuitarThin/>
-    },
-    {
-        "name": "Piano Essentials",
-        "detail": "Fundamentals of piano playing, including scales, hand coordination, and simple melodies.",
-        "duration": "4 months",
-        "price": "9000 Rs",
-        "logo": <CgPiano/>
-    },
-    {
-        "name": "Vocal Training",
-        "detail": "Improve your singing skills with breathing techniques, pitch training, and vocal exercises.",
-        "duration": "3 months",
-        "price": "8500 Rs",
-        "logo": <GiMicrophone/>
-    },
-    {
-        "name": "UGC NET Mastery",
-        "detail": "Learn drumming basics, beats, rhythm techniques, and tempo control as well as quite cool.",
-        "duration": "3 months",
-        "price": "9500 Rs",
-        "logo": <FaBookOpen/>
-    },
-    {
-        "name": "Violin Basics",
-        "detail": "Introduction to violin, including bowing techniques, finger placements, and simple tunes.",
-        "duration": "4 months",
-        "price": "9800 Rs",
-        "logo": <GiViolin/>
-    },
-    {
-        "name": "Music Production",
-        "detail": "Learn digital music production, mixing, and basic sound editing techniques.",
-        "duration": "2 months",
-        "price": "8900 Rs",
-        "logo": <LuMusic2/>
-    }
-]
 export const CoursePage = () => {
+  const [links, setLinks] = useState([]);
+  const [draggedIndex, setDraggedIndex] = useState(null);
+  const nameRef = useRef();
+  const urlRef = useRef();
+  const detailsRef = useRef();
+
+  useEffect(() => {
+    const savedLinks = JSON.parse(localStorage.getItem('stickyLinks'));
+    if (savedLinks) setLinks(savedLinks);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('stickyLinks', JSON.stringify(links));
+  }, [links]);
+
+  const addLink = () => {
+    const newLink = {
+      id: Date.now(),
+      name: nameRef.current.value,
+      url: urlRef.current.value,
+      details: detailsRef.current.value
+    };
+    if (newLink.name && newLink.url) {
+      setLinks([...links, newLink]);
+      nameRef.current.value = '';
+      urlRef.current.value = '';
+      detailsRef.current.value = '';
+    }
+  };
+
+  const deleteLink = (id) => {
+    setLinks(links.filter(link => link.id !== id));
+  };
+
+  const handleDragStart = (index) => {
+    setDraggedIndex(index);
+  };
+
+  const handleDrop = (index) => {
+    const updatedLinks = [...links];
+    const [draggedItem] = updatedLinks.splice(draggedIndex, 1);
+    updatedLinks.splice(index, 0, draggedItem);
+    setLinks(updatedLinks);
+    setDraggedIndex(null);
+  };
+
   return (
-    <section className='min-h-screen w-full bg-blue-50'>
+    <div className="bg-gradient-to-r from-blue-500 to-indigo-500 min-h-screen p-6 flex flex-col items-center">
+      <h1 className="text-3xl font-bold text-white mb-6">Sticky Links</h1>
+      <div className="bg-white p-4 rounded-lg shadow-lg mb-6 flex gap-2">
+        <input ref={nameRef} placeholder="Name" className="border p-2 rounded-lg w-32" />
+        <input ref={urlRef} placeholder="URL" className="border p-2 rounded-lg w-48" />
+        <input ref={detailsRef} placeholder="Details" className="border p-2 rounded-lg w-64" />
+        <button onClick={addLink} className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+          <FiPlus />
+        </button>
+      </div>
 
-       <div className='p-4'>
-             {/* for top text  */}
-         <div className=' flex flex-col text-center gap-4 font-poppins'>
-            <h1 className='sm:text-[4vw] text-4xl text-blue-600 font-bold' >
-                Our Courses
-            </h1>
-            <p className='sm:text-[1.5vw]  text-2xl text-blue-500'>
-            Discover your musical potential with our diverse range of courses
-            </p>
+      <div className="grid gap-4 w-full max-w-3xl">
+        {links.map((link, index) => (
+          <div
+            key={link.id}
+            draggable
+            onDragStart={() => handleDragStart(index)}
+            onDragOver={(e) => e.preventDefault()}
+            onDrop={() => handleDrop(index)}
+            className="bg-white p-4 rounded-lg shadow-lg flex justify-between items-center hover:shadow-xl transition-shadow duration-300"
+          >
+            <div>
+              <h2 className="text-lg font-semibold text-gray-700">{link.name}</h2>
+              <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                {link.url}
+              </a>
+              <p className="text-gray-500 text-sm mt-1">{link.details}</p>
             </div>
-            {/* for cards  */}
-            <div className='items-center text-start flex flex-wrap'>
-                {
-                    data.map((item,index)=>(
-                        <CourseCard  item={item}/>
-                    ))
-                }
+            <div className="flex gap-2">
+              <button onClick={() => deleteLink(link.id)} className="text-red-500 hover:text-red-600">
+                <FiTrash2 />
+              </button>
             </div>
-        </div>
-    </section>
-  )
-}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
-// export default CoursePage
+// export default StickyLinks;

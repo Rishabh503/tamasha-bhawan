@@ -31,36 +31,26 @@ const HomePage = () => {
   const courses = [
     { 
       id: 1, 
-      name: "Master the Sitar", 
-      category: "instrumental",
-      img: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1000",
-      instructor: "Pt. Ravi Kumar",
-      desc: "Embark on a mystical journey through the strings of India's most iconic instrument",
-      duration: "6 months",
-      level: "Beginner to Advanced",
-      startDate: "May 15, 2025"
+      name: "Learn Indian Classical Music", 
+      category: "Vocal",
+      img: "https://res.cloudinary.com/dhe9p6bo0/image/upload/v1747320825/Screenshot_2025-05-15_202223_fwdg6f.png", 
+      instructor: "Abha Tripathi",
+      desc: "Get Certification from AKHIL BHARTIYA GANDHARVA MAHAVIDALAYA (pune)",
+      duration: "Flexible",
+      level: "All Levels",
+      startDate: "Flexible" 
     },
+    
     { 
       id: 2, 
-      name: "Tabla Rhythms", 
-      category: "instrumental",
-      img: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1000", 
-      instructor: "Ustad Zakir Ali",
-      desc: "Feel the pulse of Indian rhythms through the mesmerizing beats of tabla",
-      duration: "4 months",
-      level: "All Levels",
-      startDate: "June 1, 2025" 
-    },
-    { 
-      id: 3, 
-      name: "Hindustani Vocals", 
+      name: "Learn Hindustani Music Light", 
       category: "vocal",
       img: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1000", 
-      instructor: "Vidushi Sunita Devi",
+      instructor: "Abha Tripathi",
       desc: "Discover your voice through ancient Hindustani classical traditions",
-      duration: "8 months",
-      level: "Intermediate",
-      startDate: "May 10, 2025" 
+      duration: "Flexible",
+      level: "Beginner",
+      startDate: "Flexible" 
     }
   ];
 
@@ -318,11 +308,11 @@ const HomePage = () => {
             <FaYoutube className="text-red-600 text-6xl mb-6" />
             <h2 className="text-4xl font-bold mb-6">Explore Our Video Lessons</h2>
             <p className="text-gray-300 mb-8 text-lg">
-              Join our <span className="text-yellow-400 font-bold">100,000+</span> subscribers experiencing the soul of Indian classical music through our video lessons, performances, and musical insights.
+              Join our  <span className="text-yellow-400 font-bold">5000+</span> subscribers experiencing the soul of Indian classical music through our video lessons, performances, and musical insights.
             </p>
             <a 
-              href="https://youtube.com" 
-              target="_blank" 
+              href="https://www.youtube.com/@TamashaBhawanMusic" 
+      
               rel="noopener noreferrer"
               className="px-6 py-3 bg-red-600 text-white rounded-full flex items-center gap-2 hover:bg-red-700 transition w-fit"
             >
