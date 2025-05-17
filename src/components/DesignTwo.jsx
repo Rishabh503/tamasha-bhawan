@@ -341,7 +341,7 @@ const HomePage = () => {
                 </div>
                 <div className="p-3 w-2/3">
                   <h3 className="font-medium text-sm mb-1">{video.title}</h3>
-                  <p className="text-gray-400 text-xs">{video.views} views</p>
+                  <p className="text-gray-400 text-xs">{video.views} </p>
                 </div>
               </motion.div>
             ))}
