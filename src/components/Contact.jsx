@@ -30,7 +30,7 @@ export const Contact = () => {
           setFormData({...formData,[e.target.name]:""})
     }
   return (
-    <section className='w-full mb-24 h-auto min-h-screen'>
+    <section className='w-full mt-10 sm:mt-0 mb-24 h-auto min-h-screen'>
         <div className=' bg-[#4B2E39] p-12 sm:p-20 flex flex-col items-center mt-2 justify-center'>
             <h1 className='font-[poppins] text-white text-[32px] sm:text-[48px]'>
                 Get in Touch

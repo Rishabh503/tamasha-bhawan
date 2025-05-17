@@ -167,7 +167,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="font-['Merriweather', serif] bg-[#F5E6C8] text-[#4A1A1A] overflow-x-hidden">
+    <div className="font-['Merriweather', serif] mt-10 md:mt-0 bg-[#F5E6C8] text-[#4A1A1A] overflow-x-hidden">
  
 
       <section className="flex flex-col md:flex-row items-center justify-between p-8 md:p-16 bg-[#fff9f0]">
@@ -499,7 +499,7 @@ const HomePage = () => {
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-[#4A1A1A] text-center text-white">
         <h2 className="text-4xl font-bold">Ready to Begin Your Musical Journey?</h2>
-        <button className="mt-6 bg-yellow-400 text-[#4A1A1A] px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">Contact Us</button>
+        <button onClick={()=>Navigate("/contact")} className="mt-6 bg-yellow-400 text-[#4A1A1A] px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">Contact Us</button>
       </section>
 
       {/* Footer */}
