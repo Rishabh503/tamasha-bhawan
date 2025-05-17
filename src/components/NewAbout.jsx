@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Music, Users, Award, BookOpen, Heart, Calendar, Mail, Phone, MessageSquare } from 'lucide-react';
+import { NavLink } from 'react-router';
 
 export default function AboutUs() {
   const [activeJourney, setActiveJourney] = useState(0);
@@ -333,7 +334,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className="py-16 px-4 md:px-8 lg:px-16 bg-[#602929] text-amber-50">
+      {/* <section className="py-16 px-4 md:px-8 lg:px-16 bg-[#602929] text-amber-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <Users className="inline-block text-amber-200 mb-2" size={32} />
@@ -341,7 +342,7 @@ export default function AboutUs() {
             <div className="h-1 w-24 bg-amber-200 mx-auto"></div>
           </div>
           
-          <div className="flex flex-col md:flex-row gap-8">
+          <div className="flex flex-col md:flex-row gap-8">v
             <div className="w-full md:w-1/2">
               <div className="border-8 border-amber-600 rounded-lg overflow-hidden shadow-xl transform transition-all duration-300 hover:scale-105">
                 <div className="relative">
@@ -373,7 +374,7 @@ export default function AboutUs() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-amber-100 to-amber-50">
@@ -411,7 +412,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Call to Action Section */}
+
       <section className="py-16 px-4 md:px-8 lg:px-16 bg-[#4A1A1A] text-[#D7A32F]">
   <div className="max-w-6xl mx-auto">
     <div className="text-center mb-12">
@@ -423,21 +424,12 @@ export default function AboutUs() {
       </p>
     </div>
     
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-4xl mx-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6 max-w-4xl mx-auto">
       {/* WhatsApp */}
-      <a 
-        href="#" 
-        className="bg-[#D7A32F] hover:bg-[#4A1A1A] p-6 rounded-lg text-center flex flex-col items-center justify-center transition-all hover:-translate-y-2 duration-300"
-      >
-        <div className="bg-[#000000] text-[#ffffff] p-4 rounded-full mb-4">
-          <MessageSquare size={24} />
-        </div>
-        <span className="font-medium text-white">WhatsApp</span>
-      </a>
-      
+     
       {/* Telegram */}
       <a 
-        href="#" 
+        href="https://t.me/tamashabhawanmusic" 
         className="bg-[#D7A32F] hover:bg-[#4A1A1A] p-6 rounded-lg text-center flex flex-col items-center justify-center transition-all hover:-translate-y-2 duration-300"
       >
         <div className="bg-[#000000] text-[#fff] p-4 rounded-full mb-4">
@@ -461,19 +453,11 @@ export default function AboutUs() {
       </a>
       
       {/* Phone */}
-      <a 
-        href="tel:+919876543210" 
-        className="bg-[#D7A32F] hover:bg-[#4A1A1A] p-6 rounded-lg text-center flex flex-col items-center justify-center transition-all hover:-translate-y-2 duration-300"
-      >
-        <div className="bg-[#000] text-[#fff] p-4 rounded-full mb-4">
-          <Phone size={24} />
-        </div>
-        <span className="font-medium text-white">Phone</span>
-      </a>
+    
       
       {/* YouTube */}
       <a 
-        href="#" 
+        href="https://www.youtube.com/@TamashaBhawanMusic " 
         className="bg-[#D7A32F] hover:bg-[#4A1A1A] p-6 rounded-lg text-center flex flex-col items-center justify-center transition-all hover:-translate-y-2 duration-300"
       >
         <div className="bg-[#000] text-[#fff] p-4 rounded-full mb-4">
@@ -487,12 +471,13 @@ export default function AboutUs() {
     </div>
     
     <div className="mt-12 text-center">
-      <a 
-        href="#" 
+      <NavLink 
+      to='/contact'
+        
         className="inline-block bg-[#D7A32F] text-[#4A1A1A] font-bold py-3 px-8 rounded-full hover:bg-[#4A1A1A] hover:text-[#D7A32F] transition-colors text-lg"
       >
         Enroll Now
-      </a>
+      </NavLink>
     </div>
   </div>
 </section>

@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaArrowRight, FaYoutube, FaShoppingCart, FaBookOpen, FaGraduationCap, FaStar, FaCalendarAlt, FaUser, FaQuoteLeft, FaQuoteRight, FaPlay } from "react-icons/fa";
-import { NavLink } from 'react-router';
+import { NavLink, useNavigate } from 'react-router';
 
 const HomePage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
   const [visibleSection, setVisibleSection] = useState(null);
   
-  // Animation on scroll detection
+  const Navigate=useNavigate();
+   
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['courses', 'products', 'testimonials', 'youtube'];
@@ -54,7 +55,7 @@ const HomePage = () => {
     }
   ];
 
-  // Product data
+  
   const products = [
     { 
       id: 1, 
@@ -93,7 +94,7 @@ const HomePage = () => {
     {
       id: 1,
       name: "Ananya Roy",
-      img: "https://randomuser.me/api/portraits/women/44.jpg",
+      img: "https://res.cloudinary.com/dhe9p6bo0/image/upload/v1745699335/WhatsApp_Image_2025-04-27_at_01.46.00_31d81b70-removebg-preview_riv0f9.png",
       text: "Tamasha Bhawan transformed my understanding of classical music. Their sitar program is simply magical and the instructors are phenomenal.",
       role: "Professional Musician",
       course: "Sitar Mastery"
@@ -101,7 +102,7 @@ const HomePage = () => {
     {
       id: 2,
       name: "Rohan Patel",
-      img: "https://randomuser.me/api/portraits/men/46.jpg",
+      img: "https://res.cloudinary.com/dhe9p6bo0/image/upload/v1745699335/WhatsApp_Image_2025-04-27_at_01.46.00_31d81b70-removebg-preview_riv0f9.png",
       text: "The tabla instructors here are real legends. I finally feel connected to rhythm! Their teaching methods make complex concepts so accessible.",
       role: "Engineering Student",
       course: "Tabla Rhythms"
@@ -128,29 +129,31 @@ const HomePage = () => {
   const videos = [
     {
       id: 1,
-      title: "Sitar Basics for Beginners",
-      thumbnail: "https://i.ibb.co/6RzSVZc/thumb1.jpg",
-      views: "245K",
-      length: "15:32"
+      title: "Gharana Khyal UGC NET MUSIC",
+      thumbnail: "https://res.cloudinary.com/dhe9p6bo0/image/upload/v1745702083/TAMASHA-removebg-preview_hhyykj.png",
+      views: "",
+      length: "20:29",
+      link:"https://www.youtube.com/watch?v=R3N3vl6GRJc&ab_channel=TamashaBhawan"
     },
     {
       id: 2,
-      title: "Understanding Ragas: A Deep Dive",
-      thumbnail: "https://i.ibb.co/3kZyJCS/thumb2.jpg",
-      views: "189K",
-      length: "22:47"
+      title: "Sarang ang ke raag ",
+      thumbnail: "https://res.cloudinary.com/dhe9p6bo0/image/upload/v1745702083/TAMASHA-removebg-preview_hhyykj.png",
+      views: "",
+      length: "22:47",
+      link:"https://youtu.be/ntOPlCwpcvM?si=M6RdPUK3hIivYEdg"
     },
     {
       id: 3,
-      title: "Tabla Rhythms Masterclass",
-      thumbnail: "https://i.ibb.co/pjLdKFR/thumb3.jpg",
-      views: "327K",
-      length: "18:09"
+      title: "UGC NET MUSIC SANGEET KE GRANTH PART 1",
+      thumbnail: "https://res.cloudinary.com/dhe9p6bo0/image/upload/v1745702083/TAMASHA-removebg-preview_hhyykj.png",
+      views: "",
+      length: "30:14",
+      link:"https://www.youtube.com/watch?v=d9AKaut_bSk&ab_channel=TamashaBhawan"
     }
   ];
 
-  // Animation variants
-  const containerVariants = {
+      const containerVariants = {
     hidden: { opacity: 0 },
     visible: { 
       opacity: 1,
@@ -166,9 +169,9 @@ const HomePage = () => {
   return (
     <div className="font-['Merriweather', serif] bg-[#F5E6C8] text-[#4A1A1A] overflow-x-hidden">
  
-      {/* Hero section */}
+
       <section className="flex flex-col md:flex-row items-center justify-between p-8 md:p-16 bg-[#fff9f0]">
-        {/* Left Side - Image */}
+
         <div className="md:w-1/2 mb-8 md:mb-0">
           <img 
             src="https://res.cloudinary.com/dhe9p6bo0/image/upload/v1745702083/TAMASHA-removebg-preview_hhyykj.png" 
@@ -177,7 +180,6 @@ const HomePage = () => {
           />
         </div>
 
-        {/* Right Side - Text */}
         <div className="md:w-1/2 flex flex-col items-start gap-6">
           <h2 className="text-4xl md:text-5xl font-bold leading-tight">
             Discover the <span className="text-[#c67f00]">Soul</span> of Indian Music
@@ -194,7 +196,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* About Section */}
       <section id="about" className="py-20 px-6 md:px-24 bg-white">
         <motion.div 
           className="flex flex-col md:flex-row items-center gap-10"
@@ -208,7 +209,7 @@ const HomePage = () => {
             <p className="text-gray-700 mb-6">
               Tamasha Bhawan was born from a vision — to nurture, teach and celebrate the divine traditions of Indian classical music. Our institution stands as a sanctuary for passionate learners and future legends.
             </p>
-            <button className="bg-yellow-400 text-[#4A1A1A] px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">Know More</button>
+            <button onClick={()=>Navigate("/newAbout")}  className="bg-yellow-400 text-[#4A1A1A] px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">  Know More</button>
           </div>
           <img src="https://res.cloudinary.com/dhe9p6bo0/image/upload/v1745699728/trendy-string-music-vector-removebg-preview_yunrzl.png" alt="About Image" className="w-full md:w-1/2" />
         </motion.div>
@@ -256,7 +257,7 @@ const HomePage = () => {
                 </div>
               </div>
               
-              {/* Course Details */}
+      
               <div className="md:w-3/5 p-8 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center gap-2 mb-4">
@@ -279,22 +280,23 @@ const HomePage = () => {
                   </div>
                 </div>
                 
-                <button className="self-start bg-[#4A1A1A] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#3A1010] transition flex items-center gap-2">
+                <a href='https://forms.gle/DMSC7CvMzZvCq8feA'  className="self-start bg-[#4A1A1A] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#3A1010] transition flex items-center gap-2">
                   <FaGraduationCap /> Enroll Now
-                </button>
+                </a>
               </div>
             </motion.div>
           ))}
         </motion.div>
         
         <div className="text-center mt-16">
-          <button className="px-8 py-3 bg-[#c67f00] text-white rounded-full font-semibold hover:bg-[#a66700] transition inline-flex items-center gap-2">
+          <button onClick={()=>Navigate("/underDev")}
+            className="px-8 py-3 bg-[#c67f00] text-white rounded-full font-semibold hover:bg-[#a66700] transition inline-flex items-center gap-2">
             View All Courses <FaArrowRight />
           </button>
         </div>
       </section>
 
-      {/* REDESIGNED YouTube section */}
+  
       <section id="youtube" className="py-20 px-6 md:px-24 bg-[#4A1A1A] text-white">
         <motion.div 
           className="flex flex-col md:flex-row items-center gap-10 md:gap-16"
@@ -303,7 +305,7 @@ const HomePage = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          {/* Left side content */}
+       
           <div className="md:w-1/2 text-left">
             <FaYoutube className="text-red-600 text-6xl mb-6" />
             <h2 className="text-4xl font-bold mb-6">Explore Our Video Lessons</h2>
@@ -320,7 +322,7 @@ const HomePage = () => {
             </a>
           </div>
           
-          {/* Right side - video thumbnails */}
+
           <div className="md:w-1/2 grid gap-4 mt-10 md:mt-0">
             {videos.map((video) => (
               <motion.div 
@@ -330,9 +332,9 @@ const HomePage = () => {
               >
                 <div className="relative w-1/3">
                   <img src={video.thumbnail} alt={video.title} className="w-full h-24 object-cover" />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+                  <a href={video.link} className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
                     <FaPlay className="text-white text-xl" />
-                  </div>
+                  </a>
                   <div className="absolute bottom-1 right-1 bg-black bg-opacity-70 text-white text-xs px-1 rounded">
                     {video.length}
                   </div>
@@ -344,7 +346,7 @@ const HomePage = () => {
               </motion.div>
             ))}
             <div className="text-center mt-2">
-              <a href="#" className="text-yellow-400 text-sm hover:underline">View more videos →</a>
+              <a href="https://www.youtube.com/@TamashaBhawanMusic" className="text-yellow-400 text-sm hover:underline">View more videos →</a>
             </div>
           </div>
         </motion.div>
@@ -413,7 +415,7 @@ const HomePage = () => {
                 <div className="flex items-center justify-between">
                   <p className="text-2xl font-bold text-[#c67f00]">{product.price}</p>
                   <button className="bg-[#4A1A1A] text-white px-4 py-2 rounded-full flex items-center gap-2 hover:bg-[#3A1010] transition text-sm">
-                    <FaShoppingCart /> Add to Cart
+                    <FaShoppingCart /> Coming Soon
                   </button>
                 </div>
               </div>
@@ -467,7 +469,7 @@ const HomePage = () => {
                   
                   <div className="flex items-center justify-between">
                     <div>
-                      <h4 className="font-bold text-lg">{testimonial.name}</h4>
+                      {/* <h4 className="font-bold text-lg">{testimonial.name}</h4> */}
                       <div className="flex items-center gap-2">
                         <span className="text-sm text-gray-600">{testimonial.role}</span>
                         <span className="w-1 h-1 bg-[#c67f00] rounded-full"></span>
@@ -486,8 +488,10 @@ const HomePage = () => {
         </motion.div>
         
         <div className="text-center mt-6">
-          <button className="px-8 py-3 bg-[#c67f00] text-white rounded-full font-semibold hover:bg-[#a66700] transition inline-flex items-center gap-2">
-            Read More Stories <FaArrowRight />
+          <button 
+          onClick={()=>Navigate("/contact")}
+          className="px-8 py-3 bg-[#c67f00] text-white rounded-full font-semibold hover:bg-[#a66700] transition inline-flex items-center gap-2">
+           Join Us <FaArrowRight />
           </button>
         </div>
       </section>
@@ -499,9 +503,6 @@ const HomePage = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#2E0E0E] text-gray-300 py-6 text-center text-sm">
-        © 2025 Tamasha Bhawan. All Rights Reserved.
-      </footer>
     </div>
   );
 };

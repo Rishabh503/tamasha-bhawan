@@ -19,7 +19,7 @@ export const Footer = () => {
        <a href="https://www.youtube.com/@TamashaBhawanMusic ">
        <FaYoutube/>
        </a>
-      <a href="wa.me/message/IM66YTEAWJD6H1">
+      <a href="wa.me/message/9310395103">
       <FaWhatsapp />
       </a>
        <FaTelegram href='https://t.me/tamashabhawanmusic' />
