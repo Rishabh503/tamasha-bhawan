@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaArrowRight, FaYoutube, FaShoppingCart, FaBookOpen, FaGraduationCap, FaStar, FaCalendarAlt, FaUser, FaQuoteLeft, FaQuoteRight, FaPlay } from "react-icons/fa";
-import { NavLink, useNavigate } from 'react-router';
+import { useEffect, useState } from 'react';
+import { FaArrowRight, FaBookOpen, FaCalendarAlt, FaGraduationCap, FaPlay, FaQuoteLeft, FaQuoteRight, FaShoppingCart, FaStar, FaYoutube } from "react-icons/fa";
+import { useNavigate } from 'react-router';
 
 const HomePage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -35,7 +35,7 @@ const HomePage = () => {
       name: "Learn Indian Classical Music", 
       category: "Vocal",
       img: "https://res.cloudinary.com/dhe9p6bo0/image/upload/v1747320825/Screenshot_2025-05-15_202223_fwdg6f.png", 
-      instructor: "Abha Tripathi",
+      instructor: " ",
       desc: "Get Certification from AKHIL BHARTIYA GANDHARVA MAHAVIDALAYA (pune)",
       duration: "Flexible",
       level: "All Levels",
@@ -47,7 +47,7 @@ const HomePage = () => {
       name: "Learn Hindustani Music Light", 
       category: "vocal",
       img: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1000", 
-      instructor: "Abha Tripathi",
+      instructor: " ",
       desc: "Discover your voice through ancient Hindustani classical traditions",
       duration: "Flexible",
       level: "Beginner",

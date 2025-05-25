@@ -1,6 +1,6 @@
 
-import React, { useState, useEffect } from 'react';
-import { Music, Users, Award, BookOpen, Heart, Calendar, Mail, Phone, MessageSquare } from 'lucide-react';
+import { BookOpen, Heart, Mail, MessageSquare, Music, Users } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router';
 
 export default function AboutUs() {
@@ -360,7 +360,7 @@ export default function AboutUs() {
             </div>
             
             <div className="w-full md:w-1/2 flex flex-col justify-center">
-              <h3 className="text-3xl font-bold mb-4 text-amber-100">Abha Tripathi & Anchal Tripathi</h3>
+              <h3 className="text-3xl font-bold mb-4 text-amber-100">  & Anchal Tripathi</h3>
               <p className="text-lg mb-4 text-amber-200">Founder & Artistic Director</p>
               <p className="text-lg mb-4">
                 With over 30 years of experience in Hindustani classical music, Pandit Rajan Mishra is a renowned vocalist of the Banaras Gharana tradition. His deep knowledge and passion for preserving musical heritage led to the founding of Tamasha Bhawan in 2015.
