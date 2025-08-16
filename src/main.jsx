@@ -13,6 +13,7 @@ import Extra from './components/Extra.jsx'
 // import NewAbout from './components/NewAbout.jsx'
 import AboutUs from './components/NewAbout.jsx'
 import UnderDevelopment from './components/UnderDevelopment.jsx'
+import ProductPage from './components/products/Draft.jsx'
 const router=createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
@@ -21,6 +22,12 @@ const router=createBrowserRouter(
       <Route path='/course' element={<CoursePage/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/underDev' element={<UnderDevelopment/>}/>
+      
+      {/* added for prpoducts  */}
+
+
+      <Route path='/product' element={<ProductPage/>}/>
+
 
 
       <Route path='/new' element={<HomePage/>}/>

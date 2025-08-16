@@ -25,6 +25,7 @@ export const Navbar = () => {
              <a href="#products" className="hover:text-yellow-400">Products</a>
              <a href="#testimonials" className="hover:text-yellow-400">Testimonials</a> */}
              <NavLink to='/contact'> Contact</NavLink>
+             <NavLink to='/contact'> Product</NavLink>
            </nav>
            <button className='md:hidden' onClick={()=>setIsOpen(!isOpen)}> <LuMusic2/> </button>
            </div>
