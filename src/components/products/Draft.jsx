@@ -86,30 +86,29 @@ const ProductPage = () => {
     ]
   };
 
-  const relatedProducts = [
+ const relatedProducts = [
     { 
       id: 2, 
       name: "UGC-NET Music Notes", 
       price: "₹2899", 
-      img: "https://cdn-icons-png.flaticon.com/512/2907/2907030.png",
+      img: "https://cdn-icons-png.flaticon.com/512/3652/3652191.png",
       rating: 4.8
     },
     { 
       id: 3, 
       name: "RPSC Music Notes", 
       price: "₹3000", 
-      img: "https://cdn-icons-png.flaticon.com/512/4065/4065533.png",
+      img: "https://cdn-icons-png.flaticon.com/512/8074/8074800.png",
       rating: 4.5
     },
     { 
       id: 4, 
       name: "TGT-PGT Music Notes", 
       price: "₹2000", 
-      img: "https://cdn-icons-png.flaticon.com/512/3125/3125713.png",
+      img: "https://cdn-icons-png.flaticon.com/512/3749/3749543.png",
       rating: 4.9
     }
   ];
-
   const reviews = [
     {
       id: 1,
@@ -141,7 +140,7 @@ const ProductPage = () => {
     <div className="font-['Merriweather', serif] bg-[#F5E6C8] text-[#4A1A1A] min-h-screen">
       {/* Breadcrumb Navigation */}
       <div className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-6 py-4">
+        {/* <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center gap-2 text-sm">
             <button 
               onClick={() => navigate('/')}
@@ -159,10 +158,10 @@ const ProductPage = () => {
             <FaArrowRight className="text-gray-400 text-xs" />
             <span className="text-gray-600">{product.name.split(' - ')[0]}</span>
           </div>
-        </div>
+        </div> */}
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-8">
+      <div className="max-w-7xl mx-auto mt-16 px-6 py-8">
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           {/* Product Images */}
           <motion.div
@@ -209,10 +208,7 @@ const ProductPage = () => {
               <span className="bg-[#c67f00] text-white px-3 py-1 rounded-full text-sm font-medium">
                 {product.category}
               </span>
-              <div className="flex items-center gap-2">
-                <FaHeart className="text-gray-400 hover:text-red-500 cursor-pointer" />
-                <FaShare className="text-gray-400 hover:text-[#c67f00] cursor-pointer" />
-              </div>
+             
             </div>
 
             {/* Title and Rating */}

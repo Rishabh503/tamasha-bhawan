@@ -25,7 +25,7 @@ export const Navbar = () => {
              <a href="#products" className="hover:text-yellow-400">Products</a>
              <a href="#testimonials" className="hover:text-yellow-400">Testimonials</a> */}
              <NavLink to='/contact'> Contact</NavLink>
-             <NavLink to='/contact'> Product</NavLink>
+             <NavLink to='/product'> Product</NavLink>
            </nav>
            <button className='md:hidden' onClick={()=>setIsOpen(!isOpen)}> <LuMusic2/> </button>
            </div>
@@ -33,6 +33,7 @@ export const Navbar = () => {
           <div className='bg-red-500'>
            <nav className={` ${isOpen?"hidden":"block"} bg-[#4A1A1A] text-white md:hidden mt-[72px] -mb:10 items-start pl-10  justify-between  flex flex-col`}>
              <NavLink className="hover:text-yellow-400 w-full  mt-2 font-semibold" to='/newAbout'> About</NavLink>
+             <NavLink className="hover:text-yellow-400 w-full  mt-2 font-semibold" to='/product'> Product</NavLink>
              {/* <a href="#courses" className="hover:text-yellow-400 w-full  mt-2 font-semibold">Courses</a>
              <a href="#products" className="hover:text-yellow-400 w-full  mt-2 font-semibold">Products</a>
              <a href="#testimonials" className="hover:text-yellow-400 w-full  mt-2 font-semibold">Testimonials</a> */}
