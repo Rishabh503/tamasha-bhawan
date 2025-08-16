@@ -8,12 +8,13 @@ import { Hero } from './components/Hero.jsx'
 import { Contact } from './components/Contact.jsx'
 import { CoursePage } from './components/CoursePage.jsx'
 import About from './components/About.jsx'
-import HomePage from './components/DesignTwo.jsx'
+import HomePage from './components/HomePage.jsx'
 import Extra from './components/Extra.jsx'
 // import NewAbout from './components/NewAbout.jsx'
 import AboutUs from './components/NewAbout.jsx'
 import UnderDevelopment from './components/UnderDevelopment.jsx'
 import ProductPage from './components/products/Draft.jsx'
+import HomePageDraft from './components/products/HomeDraft.jsx'
 const router=createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
@@ -27,6 +28,7 @@ const router=createBrowserRouter(
 
 
       <Route path='/product' element={<ProductPage/>}/>
+      <Route path='/mainn' element={<HomePageDraft/>}/>
 
 
 
