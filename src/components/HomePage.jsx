@@ -29,7 +29,7 @@ const HomePage = () => {
   }, []);
 
 
-  const whatsappNumber = "91931095103";
+  const whatsappNumber = "9310395103";
   const handleWhatsAppOrder = (productName, price) => {
     const message = `Hi! I'm interested in ordering the "${productName}" (${price}). Please provide me with more details about payment and delivery.`;
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
@@ -38,20 +38,19 @@ const HomePage = () => {
   const featuredProduct = {
     id: 1,
     name: "Riyaz Planner - Your Personal Music Practice Companion",
-    price: "₹899",
-    originalPrice: "₹1299",
-    discount: "31% OFF",
+    price: "₹999",
+    originalPrice: "₹1499",
+    discount: "33% OFF",
     rating: 4.9,
     reviewCount: 127,
     image:planner,
     shortDescription: "Transform your music practice with our comprehensive Riyaz Planner - designed specifically for Indian classical music students and professionals.",
     features: [
-      "52-week structured practice planning",
-      "Raga reference charts and progression tracking", 
+     "90 Days structured practice planning",
+      "Do's and Dont's of Riyaz",
       "Daily practice log with time tracking",
-      "Digital companion app access",
-      "Audio practice examples (2+ hours)",
-      "Performance preparation sections"
+      "Goal setting and achievement milestones",
+     "Monthly review and reflection pages",
     ]
   };
 
